@@ -19,9 +19,9 @@ const firstUniqChar = (s) => {
     }
   }
 
-  for (const key in freq) {
-    if (freq[key] === 1) {
-      return s.indexOf(key);
+  for (const letter of s) {
+    if (freq[letter] === 1) {
+      return s.indexOf(letter);
     }
   }
   return -1;
